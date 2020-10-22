@@ -35,7 +35,7 @@ function init() {
                         message: "what would you like your starting bid to be?",
                         name: "postValue"
                     }
-                ]).then(function (role) {
+                ]).then(function () {
                     console.log("your auction successfully created");
                      init();
                 })
@@ -53,13 +53,13 @@ function init() {
                         message: "How much would you like to bid?",
                         name: "bidValue"
                     }
-                ]).then(function (role) {
+                ]).then(function ( ) {
                     console.log("validating");
 
                     init();
                 })
             }
-            else if (data.role === "END") {
+            else if (data.option === "EXIT") {
                 console.log("OK");
                 
             }
