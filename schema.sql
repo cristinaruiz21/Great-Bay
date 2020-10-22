@@ -6,7 +6,8 @@ use greatbay;
 create table Items (
     id int auto_increment primary key,
     `name` varchar(255) not null,
-    `description` text
+    category varchar(255),
+    postValue decimal(19,4)
 );
 
 create table Bids (
