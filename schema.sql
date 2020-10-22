@@ -12,10 +12,10 @@ create table Items (
 
 create table Bids (
     id int auto_increment primary key,
-    item_id int not null,
+    itemId int not null,
     amount decimal(19,4) not null,
 
-    foreign key (item_id) 
+    foreign key (itemId) 
         references Items(id)
         on delete cascade
 );
