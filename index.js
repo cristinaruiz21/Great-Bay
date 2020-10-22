@@ -59,7 +59,7 @@ function init() {
                     init();
                 })
             }
-            else if (data.role === "END") {
+            else if (data.option === "EXIT") {
                 console.log("OK");
                 
             }
